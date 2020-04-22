@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     }
 
 
-    @Override
+  /*  @Override
     public void onStart(){
         super.onStart();
         GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
@@ -146,7 +146,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
-    }
+    }*/
 
     @Override
     public void onSensorChanged(SensorEvent event) {
