@@ -59,25 +59,25 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         });*/
 
         TextView name=(TextView)findViewById(R.id.name);
-        TextView email=(TextView)findViewById(R.id.email);
-        TextView id=(TextView)findViewById(R.id.id);
+        //TextView email=(TextView)findViewById(R.id.email);
+        //TextView id=(TextView)findViewById(R.id.id);
 
 
         String spname;
         String spmail;
-        String spid;
+        //String spid;
         String na;
-        String em;
+        //String em;
         String i;
         if (getIntent().getStringExtra("name")!=null)
         {
         na = getIntent().getStringExtra("name");
-        em = getIntent().getStringExtra("email");
+        //em = getIntent().getStringExtra("email");
         i = getIntent().getStringExtra("id");
 
             name.setText(na);
-            email.setText(em);
-            id.setText(i);
+            //email.setText(em);
+            //id.setText(i);
         }
         else {
             SharedPreferences sharedPreferences = getSharedPreferences("mydata",0);
@@ -85,10 +85,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
             spname = sharedPreferences.getString("name",null);
             spmail = sharedPreferences.getString("email",null);
-            spid = sharedPreferences.getString("id",null);
+            //spid = sharedPreferences.getString("id",null);
             name.setText(spname);
-            email.setText(spmail);
-            id.setText(spid);
+            //email.setText(spmail);
+            //id.setText(spid);
         }
 
 

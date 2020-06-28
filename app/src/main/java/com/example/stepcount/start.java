@@ -25,7 +25,7 @@ public class start extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
         SignInButton sign = findViewById(R.id.sign_in_button);
-        Button con=(Button)findViewById(R.id.con);
+        //Button con=(Button)findViewById(R.id.con);
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
@@ -46,13 +46,6 @@ public class start extends AppCompatActivity {
         });
 
 
-        con.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i1 = new Intent(start.this,MainActivity.class);
-                startActivity(i1);
-            }
-        });
     }
     @Override
     public void onStart(){

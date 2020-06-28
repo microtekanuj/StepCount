@@ -13,6 +13,7 @@
     android:weightSum="3"
     android:orientation="vertical">
     <LinearLayout
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -20,7 +21,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="         Welcome "
+            android:text="Welcome "
             android:textSize="25dp"></TextView>
         <TextView
             android:layout_width="wrap_content"
@@ -29,6 +30,7 @@
             android:textSize="25dp"></TextView>
     </LinearLayout>
     <LinearLayout
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -36,7 +38,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Your Email:-"
+            android:text=""
             android:textSize="25dp"></TextView>
         <TextView
             android:layout_width="wrap_content"
@@ -45,16 +47,18 @@
             android:textSize="25dp"></TextView>
     </LinearLayout>
     <LinearLayout
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="horizontal">
 
         <TextView
+            android:gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="User ID:-"
-            android:textSize="25dp"></TextView>
+            android:text="Click on Start to start recording your steps"
+            android:textSize="20dp"></TextView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

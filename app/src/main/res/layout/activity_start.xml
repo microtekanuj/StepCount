@@ -8,28 +8,31 @@
     android:weightSum="2"
     tools:context=".start">
     <TextView
-        android:layout_weight="1"
+        android:layout_weight="0.5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome to login page"
+        android:text="Welcome!"
         android:layout_gravity="center"
         android:gravity="center"
         android:textSize="40dp">
     </TextView>
+    <TextView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Your Fitness Journey"
+        android:textSize="30dp">
+
+    </TextView>
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/sign_in_button"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         />
 
-    <Button
-        android:id="@+id/con"
-        android:gravity="center_horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:hint="Continue without login"></Button>
 
 </LinearLayout>
